@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    #plate {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        background-size:contain;
+        background-repeat:no-repeat;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div id="plate"></div>
+    <button id="button">
+        BREAKFAST GENERATOR!
+    </button>
+    <script type="text/javascript">
+    var breakfast = ["url(https://www.google.com/imgres?imgurl=http%3A%2F%2Fmedia.foodnetwork.ca%2Frecipetracker%2Fb8975cf1-88ec-4fbd-8a32-630b08723135_the-perfect-omelette_WebReady.jpg&imgrefurl=http%3A%2F%2Fwww.foodnetwork.ca%2Frecipe%2Fthe-perfect-omelette%2F14862%2F&tbnid=xeC6sLUmDBHHZM&vet=12ahUKEwjbn57uo8LnAhUIB1kKHQGmB-sQMygSegUIARCsAg..i&docid=t7fkWr5_CwbnlM&w=460&h=230&q=omlette&safe=active&ved=2ahUKEwjbn57uo8LnAhUIB1kKHQGmB-sQMygSegUIARCsAg)", "url(https://www.momables.com/wp-content/uploads/2013/12/Egg-free-french-toast_post.jpg)", "url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fd9hyo6bif16lx.cloudfront.net%2Flive%2Fimg%2Fproduction%2Fdetail%2Fmenu%2Fbreakfast_breakfast-classics_big-two-do-breakfast.jpg&imgrefurl=https%3A%2F%2Fwww.friendlysrestaurants.com%2Fmenu-item%2Fbig-two-do-breakfast%2F&tbnid=-eyD17-8X6ibLM&vet=12ahUKEwiCjIK-o8LnAhWSmVkKHVP5BaYQMygMegUIARCeAg..i&docid=dxOvLC7QuAdP6M&w=1280&h=720&q=breakfast&safe=active&ved=2ahUKEwiCjIK-o8LnAhWSmVkKHVP5BaYQMygMegUIARCeAg)"]
+    var plate = document.getElementById('plate');
+    var button = document.getElementById('button');
+
+
+    button.addEventListener("click", function() {
+        plate.style.backgroundImage = breakfast[Math.round(Math.random()*2)]});
+    </script>
+</body>
+
+</html>
